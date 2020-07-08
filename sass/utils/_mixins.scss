@@ -1,0 +1,17 @@
+@mixin menu-texte {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@mixin menu-images {
+    height: 10px;
+    width: 200px;
+    
+}
+@mixin menu-entete {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+}

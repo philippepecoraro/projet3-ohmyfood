@@ -1,0 +1,52 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    color: $color-letters-header ;
+    font-size: 2rem;
+}
+.contenu-menu-haut1__titre1, .container-menu1-haut__titre, .container-menu1-bas__titre {
+    font-family: 'Devonshire', cursive;
+}
+.container-menu1-haut__titre {
+    font-size: 2.5rem;
+}
+.container-menu1-bas__titre {
+    font-size: 1.8rem;
+}
+.container-menu1, .container-menu3, .container-menu4 {
+    font-family: 'Kalam', cursive;
+}
+.container-menu2 {
+    font-family: 'Averia Serif Libre', cursive;
+}
+.contenu-menu-haut2__titre1, .container-menu2-haut__titre {
+    font-family: 'Croissant One', cursive;
+}
+.contenu-menu-bas1__titre1, .container-menu3-haut__titre {
+    font-family: 'Dancing Script', cursive;
+}
+.contenu-menu-bas2__titre1, .container-menu4-haut__titre {
+    font-family: 'Kaushan Script', cursive;
+}
+.prochainement {
+    font-family: 'Roboto', sans-serif;
+    color: $color-letters-header;
+    font-size: 2.1rem;
+    font-weight: normal;
+}
+.pieddepage {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: normal; 
+    
+    &__texte1 {
+        color: $color-letters-header;
+        font-weight: normal;
+    } 
+    &__texte2 {
+        color:$color-letters-header;
+        font-weight: normal;
+    }  
+}
+
+
+

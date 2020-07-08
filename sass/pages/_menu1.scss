@@ -1,0 +1,80 @@
+.note-titre {
+    text-align: center;
+}
+.container-menu1 {
+    background-color: $menu1-background;
+    display: flex;
+    flex-direction: column;  
+    
+}
+.container-menu1-haut {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.5rem;
+    
+}
+.container-menu1-prelude {
+            margin-top: 30px;
+            margin-bottom: 50px;
+    &__entete {
+        @include menu-entete;
+        
+        }
+    &__imageG {
+        @include menu-images;
+        }
+    &__imageD {
+        @include menu-images;
+        }
+    &__corps {
+        @include menu-texte;
+    }
+}
+.container-menu1-pointorgue {
+        margin-bottom: 50px;
+    &__entete {
+        @include menu-entete;
+    }
+    &__imageG {
+        @include menu-images;
+    }
+    &__imageD {
+        @include menu-images;
+            }
+    &__corps {
+        @include menu-texte;
+    }  
+}
+.container-menu1-mouvement {
+        margin-bottom: 20px;
+    &__entete {
+        @include menu-entete;
+    }
+    &__imageG {
+        @include menu-images;
+    }
+    &__imageD {
+        @include menu-images;
+            }
+    &__texte {
+        padding-left: 40px;
+    }  
+}
+.container-menu1-bas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    &__image {
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+

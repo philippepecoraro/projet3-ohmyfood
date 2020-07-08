@@ -1,0 +1,65 @@
+.delice {
+    text-align: center;
+}
+.container-menu3 {
+    background-color: $menu3-background;
+    display: flex;
+    flex-direction: column;  
+    
+}
+.container-menu3-haut {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-menu3-commencer {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+        &__entete {
+        @include menu-entete;     
+        }
+        &__imageG {
+        @include menu-images;        
+        }
+        &__imageD {
+        @include menu-images;        
+        }
+        &__corps {
+        @include menu-texte;
+        }
+}
+.container-menu3-continuer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+        &__entete {
+        @include menu-entete; 
+        }
+        &__imageG {
+        @include menu-images;
+        }
+        &__imageD {
+        @include menu-images;
+        }
+        &__corps {
+        @include menu-texte;
+        }
+}
+.container-menu3-terminer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+        &__entete {
+        @include menu-entete;
+        }
+        &__imageG {
+        @include menu-images;
+        }
+        &__imageD {
+        @include menu-images;
+        }
+        &__corps {
+        @include menu-texte;
+        }
+}
