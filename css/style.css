@@ -51,11 +51,12 @@ header {
   font-weight: normal;
 }
 
-.pieddepage {
+footer {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   font-weight: normal;
 }
+
 .pieddepage__texte1 {
   color: #FDCB46;
   font-weight: normal;
@@ -64,10 +65,17 @@ header {
   color: #FDCB46;
   font-weight: normal;
 }
+.pieddepage__mentionslegales {
+  text-decoration: none;
+}
+.pieddepage__contacteznous {
+  text-decoration: none;
+}
 
 .container {
   margin: auto;
   width: 900px;
+  height: 1300px;
 }
 
 .container-acceuil, .container-menu1, .container-menu2, .container-menu3, .container-menu4 {
@@ -76,7 +84,7 @@ header {
   margin: auto;
 }
 
-.pieddepage {
+footer {
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
@@ -84,16 +92,10 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   height: 60px;
+  width: 900px;
   margin-top: 80px;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 10px;
-}
-.pieddepage__mentionslegales {
-  text-decoration: none;
-}
-.pieddepage__contacteznous {
-  text-decoration: none;
+  position: fixed;
+  bottom: 0;
 }
 
 header {

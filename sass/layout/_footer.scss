@@ -1,4 +1,4 @@
-.pieddepage {
+footer {
     background-color: $header-footer-background;
     display: flex;
     justify-content: space-between;
@@ -6,15 +6,9 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 60px;
+    width: 900px;
     margin-top: 80px;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom: 10px;
-
-    &__mentionslegales {
-        text-decoration: none;        
-    }
-    &__contacteznous {
-        text-decoration: none;        
-    }
+    position: fixed;
+    bottom: 0;
 }
+
