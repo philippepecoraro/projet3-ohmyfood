@@ -1,5 +1,3 @@
-/*$color-acceuil-menu1:*/
-/*$color-acceuil-menu1:*/
 header {
   font-family: "Roboto", sans-serif;
   color: #FDCB46;
@@ -10,6 +8,10 @@ header {
   font-family: "Devonshire", cursive;
 }
 
+.contenu-menu-haut1__titre2 {
+  font-family: "Itim", cursive;
+}
+
 .container-menu1-haut__titre {
   font-size: 2.5rem;
 }
@@ -18,7 +20,7 @@ header {
   font-size: 1.8rem;
 }
 
-.container-menu1, .container-menu3, .container-menu4 {
+.container-menu1, .container-menu3, .container-menu4, .contenu-menu-bas1__titre2, .contenu-menu-bas2__titre2 {
   font-family: "Kalam", cursive;
 }
 
@@ -28,6 +30,10 @@ header {
 
 .contenu-menu-haut2__titre1, .container-menu2-haut__titre {
   font-family: "Croissant One", cursive;
+}
+
+.contenu-menu-haut2__titre2 {
+  font-family: "Unna", serif;
 }
 
 .contenu-menu-bas1__titre1, .container-menu3-haut__titre {
@@ -90,9 +96,14 @@ header {
   text-decoration: none;
 }
 
-.ohmyfood {
+header {
   background-color: #579C87;
   text-align: center;
+}
+
+.ohmyfood {
+  text-decoration: none;
+  color: #FDCB46;
 }
 
 .contenu-menu-haut, .contenu-menu-bas {

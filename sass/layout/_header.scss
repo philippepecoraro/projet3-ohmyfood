@@ -1,6 +1,11 @@
 
 
-.ohmyfood {
+header {
     background-color:$header-footer-background;
     text-align: center;
+    
+}
+.ohmyfood {
+    text-decoration: none;
+    color: $color-letters-header;
 }
