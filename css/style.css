@@ -44,6 +44,14 @@ header {
   font-family: "Kaushan Script", cursive;
 }
 
+.container-menu3-commencer__titre, .container-menu3-continuer__titre, .container-menu3-terminer__titre {
+  font-weight: normal;
+}
+
+.container-menu4-esquisse__titre, .container-menu4-oeuvre__titre, .container-menu4-art__titre {
+  font-weight: normal;
+}
+
 .prochainement {
   font-family: "Roboto", sans-serif;
   color: #FDCB46;
@@ -141,6 +149,15 @@ header {
 .contenu-menu-haut2__lien {
   text-decoration: none;
 }
+.contenu-menu-haut2__titre1 {
+  background: linear-gradient(135deg, #C77412, #8F5AFF);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.contenu-menu-haut2__titre2 {
+  color: #C77412;
+}
 
 .contenu-menu-bas1 {
   background-color: #F9F9F9;
@@ -148,12 +165,30 @@ header {
 .contenu-menu-bas1__lien {
   text-decoration: none;
 }
+.contenu-menu-bas1__titre1 {
+  background: linear-gradient(135deg, #0230DF, #0889FB);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.contenu-menu-bas1__titre2 {
+  color: #0889FB;
+}
 
 .contenu-menu-bas2 {
   background-color: #FDFFFD;
 }
 .contenu-menu-bas2__lien {
   text-decoration: none;
+}
+.contenu-menu-bas2__titre1 {
+  background: linear-gradient(135deg, #43973D, #BEFF7F);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.contenu-menu-bas2__titre2 {
+  color: #72BF56;
 }
 
 .prochainement {
@@ -279,6 +314,12 @@ header {
   display: flex;
   flex-direction: column;
 }
+.container-menu2-haut__titre {
+  background: linear-gradient(135deg, #C77412, #8F5AFF);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 
 .container-menu2-appetit {
   margin-top: 50px;
@@ -303,6 +344,10 @@ header {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
+  color: #C77412;
+}
+.container-menu2-appetit__titre {
+  color: #C77412;
 }
 
 .container-menu2-papilles {
@@ -328,6 +373,10 @@ header {
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
+  color: #A56799;
+}
+.container-menu2-papilles__titre {
+  color: #A56799;
 }
 
 .container-menu2-gourmandises {
@@ -349,6 +398,10 @@ header {
 }
 .container-menu2-gourmandises__texte {
   padding-left: 40px;
+  color: #6E4CCC;
+}
+.container-menu2-gourmandises__titre {
+  color: #6E4CCC;
 }
 
 .delice {
@@ -366,6 +419,12 @@ header {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+}
+.container-menu3-haut__titre {
+  background: linear-gradient(135deg, #0230DF, #0889FB);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .container-menu3-commencer {
@@ -458,6 +517,12 @@ header {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+}
+.container-menu4-haut__titre {
+  background: linear-gradient(135deg, #43973D, #BEFF7F);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .container-menu4-esquisse {

@@ -33,6 +33,12 @@ header {
 .contenu-menu-bas2__titre1, .container-menu4-haut__titre {
     font-family: 'Kaushan Script', cursive;
 }
+.container-menu3-commencer__titre, .container-menu3-continuer__titre, .container-menu3-terminer__titre {
+    font-weight: normal;
+}
+.container-menu4-esquisse__titre, .container-menu4-oeuvre__titre, .container-menu4-art__titre {
+    font-weight: normal;
+}
 .prochainement {
     font-family: 'Roboto', sans-serif;
     color: $color-letters-header;

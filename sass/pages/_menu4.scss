@@ -10,7 +10,13 @@
     text-align: center;
     padding-top: 30px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    &__titre {
+        background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
+             -webkit-text-fill-color: transparent;
+             -webkit-background-clip: text;
+             background-clip: text;
+    }  
 }
 .container-menu4-esquisse {
     margin-top: 50px;

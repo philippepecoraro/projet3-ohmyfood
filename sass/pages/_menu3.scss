@@ -12,7 +12,12 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    
+    &__titre {
+        background: linear-gradient(135deg,$color-acceuil-menu3, $color-acceuil-menu3b );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 .container-menu3-commencer {
     margin-top: 50px;

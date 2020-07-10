@@ -29,11 +29,29 @@
         &__lien {
             text-decoration: none;
         }
+        &__titre1 {
+            background: linear-gradient(135deg, #C77412, #8F5AFF);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        &__titre2 {
+            color: #C77412;
+        }
 }
 .contenu-menu-bas1 {
     background-color: $menu3-background;
         &__lien {
             text-decoration: none;
+        }
+        &__titre1 {
+           background: linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        &__titre2 {
+            color: $color-acceuil-menu3b;
         }
 }
 .contenu-menu-bas2 {
@@ -41,6 +59,15 @@
         &__lien {
             text-decoration: none;
         }
+        &__titre1 {
+            background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
+             -webkit-text-fill-color: transparent;
+             -webkit-background-clip: text;
+             background-clip: text;
+         }
+         &__titre2 {
+             color: $color-acceuil-menu4-menu;
+         }
 }
 .prochainement {
     background-color: $header-footer-background;

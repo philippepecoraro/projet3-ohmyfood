@@ -12,7 +12,12 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    
+    &__titre {
+        background: linear-gradient(135deg, #C77412, #8F5AFF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 .container-menu2-appetit {
     margin-top: 50px;
@@ -30,7 +35,11 @@
     }
     &__corps {
     @include menu-texte;
+    color: $color-acceuil-menu2;
     }
+    &__titre {
+        color: $color-acceuil-menu2;
+    }    
 }
 .container-menu2-papilles {
     margin-top: 30px;
@@ -47,6 +56,10 @@
     }
     &__corps {
     @include menu-texte;
+    color: $color-menu2-papilles;
+    }
+    &__titre {
+    color: $color-menu2-papilles; 
     }
 }
 .container-menu2-gourmandises {
@@ -63,5 +76,9 @@
             }
     &__texte {
         padding-left: 40px;
+        color: $color-menu-gourmandises;
     }  
+    &__titre {
+        color: $color-menu-gourmandises;
+    }
 }
