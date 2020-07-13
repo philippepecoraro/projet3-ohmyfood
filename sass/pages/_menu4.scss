@@ -12,32 +12,41 @@
     display: flex;
     flex-direction: column;  
     &__titre {
+        background: -webkit-linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
         background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
-             -webkit-text-fill-color: transparent;
-             -webkit-background-clip: text;
-             background-clip: text;
-    }  
-}
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;  
+    }             
+ }
 .container-menu4-esquisse {
-    margin-top: 50px;
-    margin-bottom: 40px;
-
-    &__entete {
-        @include menu-entete;     
-        }
-        &__imageG {
-        @include menu-images;        
-        }
-        &__imageD {
-        @include menu-images;        
-        }
-        &__corps {
-        @include menu-texte;
-        }
+    margin-top: 50px;   
+        &__entete {
+            @include menu-entete;     
+            }
+            &__imageG {
+            @include menu-images;        
+            }
+            &__imageD {
+            @include menu-images;        
+            }
+            &__corps {
+            @include menu4-texte;
+            }
+            &__titre {        
+                &:hover {                
+                    &::after {
+                    @include underline-hover-after;
+                    }
+                }
+                &::after {
+                    @include underline-after;
+                    width: 70px;     
+                    background: $color-acceuil-menu4; 
+                }  
+            }    
 }
 .container-menu4-oeuvre {
     margin-top: 30px;
-    margin-bottom: 50px;
         &__entete {
         @include menu-entete; 
         }
@@ -48,12 +57,24 @@
         @include menu-images;
         }
         &__corps {
-        @include menu-texte;
+        @include menu4-texte;
+        }
+        &__titre {            
+            &:hover {                
+                &::after {
+                    @include underline-hover-after; 
+                    }
+            }
+            &::after {
+            @include underline-after;
+                width: 140px;   
+                background: $color-acceuil-menu4;          
+            }  
         }
 }
 .container-menu4-art {
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
         &__entete {
         @include menu-entete;
         }
@@ -64,6 +85,18 @@
         @include menu-images;
         }
         &__corps {
-        @include menu-texte;
+        @include menu4-texte;
+        }
+        &__titre {        
+            &:hover {                
+                    &::after {
+                        @include underline-hover-after;
+                    }
+                }
+            &::after {
+                @include  underline-after;
+                width: 155px; 
+                background:$color-acceuil-menu4 ;            
+            }  
         }
 }

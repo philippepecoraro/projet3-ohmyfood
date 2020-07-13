@@ -12,73 +12,99 @@
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    &__titre {
-        background: linear-gradient(135deg, #C77412, #8F5AFF);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-    }
+        &__titre {
+            background: -webkit-linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
+            background: linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
 }
 .container-menu2-appetit {
     margin-top: 50px;
     margin-bottom: 40px;
-
-    &__entete {
-    @include menu-entete;
-
-    }
-    &__imageG {
-    @include menu-images;
-    }
-    &__imageD {
-    @include menu-images;
-    }
-    &__corps {
-    @include menu-texte;
-    color: $color-acceuil-menu2;
-    }
-    &__titre {
+        &__entete {
+        @include menu-entete;
+        }
+        &__imageG {
+        @include menu-images;
+        }
+        &__imageD {
+        @include menu-images;
+        }
+        &__corps {
+        @include menu2-3-texte;
         color: $color-acceuil-menu2;
-    }    
+        }
+        &__titre {
+            color: $color-acceuil-menu2;
+            &:hover {                
+                &::after {
+                @include underline-hover-after;
+                }
+            }
+            &::after {
+                @include underline-after;
+                width: 230px;     
+                background: $color-acceuil-menu2;     
+            }  
+        }    
 }
 .container-menu2-papilles {
     margin-top: 30px;
     margin-bottom: 50px;
-    &__entete {
-    @include menu-entete;
-
-    }
-    &__imageG {
-    @include menu-images;
-    }
-    &__imageD {
-    @include menu-images;
-    }
-    &__corps {
-    @include menu-texte;
-    color: $color-menu2-papilles;
-    }
-    &__titre {
-    color: $color-menu2-papilles; 
-    }
+        &__entete {
+        @include menu-entete;
+        }
+        &__imageG {
+        @include menu-images;
+        }
+        &__imageD {
+        @include menu-images;
+        }
+        &__corps {
+        @include menu2-3-texte;
+        color: $color-menu2-papilles;
+        }
+        &__titre {
+            color: $color-menu2-papilles; 
+            &:hover {                
+                &::after {
+                    @include underline-hover-after; 
+                }
+            }
+            &::after {
+            @include underline-after;
+                width: 170px;   
+                background: $color-menu2-papilles;          
+            }  
+        }
 }
 .container-menu2-gourmandises {
-    margin-bottom: 60px;
-    
-    &__entete {
-        @include menu-entete;
-    }
-    &__imageG {
-        @include menu-images;
-    }
-    &__imageD {
-        @include menu-images;
-            }
-    &__texte {
-        padding-left: 40px;
-        color: $color-menu-gourmandises;
-    }  
-    &__titre {
-        color: $color-menu-gourmandises;
-    }
+    margin-bottom: 60px;    
+        &__entete {
+            @include menu-entete;
+        }
+        &__imageG {
+            @include menu-images;
+        }
+        &__imageD {
+            @include menu-images;
+                }
+        &__texte {
+            padding-left: 90px;
+            color: $color-menu-gourmandises;
+        }  
+        &__titre {
+            color: $color-menu-gourmandises;
+            &:hover {                
+                    &::after {
+                        @include underline-hover-after;
+                    }
+                }
+            &::after {
+                @include  underline-after;
+                width: 200px; 
+                background: $color-menu-gourmandises;            
+            }  
+        }
 }

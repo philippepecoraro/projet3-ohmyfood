@@ -13,62 +13,115 @@
     display: flex;
     flex-direction: column;
     line-height: 0.5rem;
-    
+        &__titre {
+            color: $color-acceuil-menu1;
+        } 
 }
 .container-menu1-prelude {
-            margin-top: 30px;
-            margin-bottom: 50px;
-    &__entete {
-        @include menu-entete;
-        
+    margin-top: 30px;
+    margin-bottom: 50px;
+        &__entete {
+            @include menu-entete;        
+            }
+        &__imageG {
+            @include menu-images;
+            padding-left: 30px;
+            }
+        &__imageD {
+            @include menu-images;
+            padding-right: 30px;
+            }
+        &__corps {
+            @include menu1-texte;
+            color:$color-acceuil-menu1; 
         }
-    &__imageG {
-        @include menu-images;
+        &__titre {
+            color:$color-acceuil-menu1;    
+            &:hover {                
+                    &::after {
+                    @include underline-hover-after;
+                    }
+            }
+            &::after {
+                @include underline-after;
+                width: 70px;
+                background: $color-acceuil-menu1;            
+            }  
         }
-    &__imageD {
-        @include menu-images;
-        }
-    &__corps {
-        @include menu-texte;
-    }
 }
 .container-menu1-pointorgue {
-        margin-bottom: 50px;
-    &__entete {
-        @include menu-entete;
-    }
-    &__imageG {
-        @include menu-images;
-    }
-    &__imageD {
-        @include menu-images;
+    margin-bottom: 50px;
+        &__entete {
+            @include menu-entete;
+        }
+        &__imageG {
+            @include menu-images;
+            padding-left: 30px;
+        }
+        &__imageD {
+            @include menu-images;
+            padding-right: 30px;
+                }
+        &__corps {
+            @include menu1-texte;
+            color:$color-acceuil-menu1;
+        } 
+        &__titre {
+            color:$color-acceuil-menu1;    
+            &:hover {                
+                    &::after {
+                        @include underline-hover-after; 
+                    }
             }
-    &__corps {
-        @include menu-texte;
-    }  
+            &::after {
+            @include underline-after;
+                width: 130px;   
+                background: $color-acceuil-menu1;          
+            }  
+        }
 }
 .container-menu1-mouvement {
-        margin-bottom: 20px;
-    &__entete {
-        @include menu-entete;
-    }
-    &__imageG {
-        @include menu-images;
-    }
-    &__imageD {
-        @include menu-images;
+    margin-bottom: 20px;
+        &__entete {
+            @include menu-entete;
+        }
+        &__imageG {
+            @include menu-images;
+            padding-left: 30px;
+        }
+        &__imageD {
+            @include menu-images;
+            padding-right: 30px;
+                }
+        &__texte {
+            padding-left: 60px;
+            color:$color-acceuil-menu1;
+        }  
+        &__titre {
+            color:$color-acceuil-menu1;    
+            &:hover {                
+                    &::after {
+                        @include underline-hover-after;
+                    }
             }
-    &__texte {
-        padding-left: 40px;
-    }  
+            &::after {
+                @include  underline-after;
+                width: 160px; 
+                background: $color-acceuil-menu1;            
+            }  
+        }
 }
 .container-menu1-bas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    &__image {
-        margin-right: 10px;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        &__image {
+            margin-right: 10px;
+        }
+        &__titre {
+            color: $color-acceuil-menu1;
+            padding-bottom: 20px;
+        }
 }
 
 
