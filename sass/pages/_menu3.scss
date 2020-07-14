@@ -8,10 +8,7 @@
     
 }
 .container-menu3-haut {
-    text-align: center;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+    @include container-menu;
         &__titre {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b );
             background: linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b);
@@ -31,12 +28,12 @@
         @include menu-images;        
         }
         &__corps {
-        @include menu2-3-texte;        
+        @include menu2-3-texte(black);        
         }
         &__titre {        
             &:hover {                
                 &::after {
-                   @include underline-hover-after;
+                    transform: scaleX(1);
                 }
             }
             &::after {
@@ -58,12 +55,12 @@
         @include menu-images;
         }
         &__corps {
-        @include menu2-3-texte;
+        @include menu2-3-texte (black);
         }
         &__titre {            
             &:hover {                
                 &::after {
-                    @include underline-hover-after; 
+                    transform: scaleX(1);
                 }
             }
             &::after {
@@ -86,12 +83,12 @@
         @include menu-images;
         }
         &__corps {
-        @include menu2-3-texte;
+        @include menu2-3-texte (black);
         }
         &__titre {        
             &:hover {                
                     &::after {
-                        @include underline-hover-after;
+                        transform: scaleX(1);
                     }
                 }
             &::after {

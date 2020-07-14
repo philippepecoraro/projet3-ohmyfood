@@ -8,10 +8,7 @@
     
 }
 .container-menu2-haut {
-    text-align: center;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+    @include container-menu;
         &__titre {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
             background: linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
@@ -32,14 +29,13 @@
         @include menu-images;
         }
         &__corps {
-        @include menu2-3-texte;
-        color: $color-acceuil-menu2;
+        @include menu2-3-texte ($color-acceuil-menu2);
         }
         &__titre {
             color: $color-acceuil-menu2;
             &:hover {                
                 &::after {
-                @include underline-hover-after;
+                    transform: scaleX(1);
                 }
             }
             &::after {
@@ -62,14 +58,13 @@
         @include menu-images;
         }
         &__corps {
-        @include menu2-3-texte;
-        color: $color-menu2-papilles;
+        @include menu2-3-texte ($color-menu2-papilles);
         }
         &__titre {
             color: $color-menu2-papilles; 
             &:hover {                
                 &::after {
-                    @include underline-hover-after; 
+                    transform: scaleX(1);
                 }
             }
             &::after {
@@ -98,7 +93,7 @@
             color: $color-menu-gourmandises;
             &:hover {                
                     &::after {
-                        @include underline-hover-after;
+                        transform: scaleX(1);
                     }
                 }
             &::after {

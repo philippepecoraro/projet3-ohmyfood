@@ -1,15 +1,17 @@
-@mixin menu1-texte {
+@mixin menu1-texte ($color) {
     display: flex;
     justify-content: space-between;
     padding-left: 70px;
     padding-right: 70px;
+    color: $color
 }
 
-@mixin menu2-3-texte {
+@mixin menu2-3-texte ($color) {
     display: flex;
     justify-content: space-between;
     padding-left: 90px;
     padding-right: 90px;
+    color: $color;
 }
 
 @mixin menu4-texte {
@@ -31,16 +33,18 @@
     height: 30px;
 }
 
-@mixin underline-hover-after {
-    transform-origin: 0% 50%;
-    transition: transform 600ms;
-    transform: scaleX(1);
-}
-
 @mixin underline-after {
     content: "";
     display: block;
     height: 2px;
     bottom: 0px;
     transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 600ms ease-in-out;
+}
+@mixin container-menu {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
 }

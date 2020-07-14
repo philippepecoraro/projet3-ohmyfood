@@ -7,10 +7,7 @@
     flex-direction: column;      
 }
 .container-menu4-haut {
-    text-align: center;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;  
+    @include container-menu;
     &__titre {
         background: -webkit-linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
         background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
@@ -35,7 +32,7 @@
             &__titre {        
                 &:hover {                
                     &::after {
-                    @include underline-hover-after;
+                        transform: scaleX(1);
                     }
                 }
                 &::after {
@@ -62,7 +59,7 @@
         &__titre {            
             &:hover {                
                 &::after {
-                    @include underline-hover-after; 
+                    transform: scaleX(1);
                     }
             }
             &::after {
@@ -90,7 +87,7 @@
         &__titre {        
             &:hover {                
                     &::after {
-                        @include underline-hover-after;
+                        transform: scaleX(1);
                     }
                 }
             &::after {

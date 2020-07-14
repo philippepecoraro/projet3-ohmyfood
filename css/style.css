@@ -120,6 +120,23 @@ footer {
   margin: auto;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: translate(1px, 1px) rotate(2deg);
+  }
+  25% {
+    transform: translate(-1px, -1px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(1px, 1px) rotate(2deg);
+  }
+  75% {
+    transform: translate(-1px, -1px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(1px, 1px) rotate(2deg);
+  }
+}
 footer {
   background-color: #579C87;
   display: flex;
@@ -132,6 +149,12 @@ footer {
   margin-top: 80px;
   position: fixed;
   bottom: 0;
+}
+footer .pieddepage__mentionslegales, footer .pieddepage__contacteznous {
+  text-decoration: none;
+}
+footer .pieddepage__mentionslegales:hover, footer .pieddepage__contacteznous:hover {
+  animation: wiggle 200ms infinite;
 }
 
 header {
@@ -280,8 +303,6 @@ header {
   color: #3C1218;
 }
 .container-menu1-prelude__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu1-prelude__titre::after {
@@ -290,6 +311,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 70px;
   background: #3C1218;
 }
@@ -324,8 +347,6 @@ header {
   color: #3C1218;
 }
 .container-menu1-pointorgue__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu1-pointorgue__titre::after {
@@ -334,6 +355,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 130px;
   background: #3C1218;
 }
@@ -365,8 +388,6 @@ header {
   color: #3C1218;
 }
 .container-menu1-mouvement__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu1-mouvement__titre::after {
@@ -375,6 +396,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 160px;
   background: #3C1218;
 }
@@ -444,8 +467,6 @@ header {
   color: #C77412;
 }
 .container-menu2-appetit__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu2-appetit__titre::after {
@@ -454,6 +475,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 230px;
   background: #C77412;
 }
@@ -487,8 +510,6 @@ header {
   color: #A56799;
 }
 .container-menu2-papilles__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu2-papilles__titre::after {
@@ -497,6 +518,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 170px;
   background: #A56799;
 }
@@ -526,8 +549,6 @@ header {
   color: #6E4CCC;
 }
 .container-menu2-gourmandises__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu2-gourmandises__titre::after {
@@ -536,6 +557,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 200px;
   background: #6E4CCC;
 }
@@ -585,10 +608,9 @@ header {
   justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
+  color: black;
 }
 .container-menu3-commencer__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu3-commencer__titre::after {
@@ -597,6 +619,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 175px;
   background: #0022DB;
 }
@@ -623,10 +647,9 @@ header {
   justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
+  color: black;
 }
 .container-menu3-continuer__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu3-continuer__titre::after {
@@ -635,6 +658,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 160px;
   background: #0670F3;
 }
@@ -662,10 +687,9 @@ header {
   justify-content: space-between;
   padding-left: 90px;
   padding-right: 90px;
+  color: black;
 }
 .container-menu3-terminer__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu3-terminer__titre::after {
@@ -674,6 +698,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 150px;
   background: #229DF9;
 }
@@ -725,8 +751,6 @@ header {
   padding-right: 80px;
 }
 .container-menu4-esquisse__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu4-esquisse__titre::after {
@@ -735,6 +759,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 70px;
   background: #43973D;
 }
@@ -763,8 +789,6 @@ header {
   padding-right: 80px;
 }
 .container-menu4-oeuvre__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu4-oeuvre__titre::after {
@@ -773,6 +797,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 140px;
   background: #43973D;
 }
@@ -802,8 +828,6 @@ header {
   padding-right: 80px;
 }
 .container-menu4-art__titre:hover::after {
-  transform-origin: 0% 50%;
-  transition: transform 600ms;
   transform: scaleX(1);
 }
 .container-menu4-art__titre::after {
@@ -812,6 +836,8 @@ header {
   height: 2px;
   bottom: 0px;
   transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms ease-in-out;
   width: 155px;
   background: #43973D;
 }

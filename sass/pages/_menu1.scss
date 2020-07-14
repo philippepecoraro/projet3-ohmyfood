@@ -8,10 +8,7 @@
     
 }
 .container-menu1-haut {
-    text-align: center;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
+    @include container-menu;
     line-height: 0.5rem;
         &__titre {
             color: $color-acceuil-menu1;
@@ -32,14 +29,13 @@
             padding-right: 30px;
             }
         &__corps {
-            @include menu1-texte;
-            color:$color-acceuil-menu1; 
-        }
+            @include menu1-texte($color-acceuil-menu1);
+           }
         &__titre {
             color:$color-acceuil-menu1;    
             &:hover {                
                     &::after {
-                    @include underline-hover-after;
+                        transform: scaleX(1);
                     }
             }
             &::after {
@@ -63,14 +59,13 @@
             padding-right: 30px;
                 }
         &__corps {
-            @include menu1-texte;
-            color:$color-acceuil-menu1;
+            @include menu1-texte($color-acceuil-menu1);
         } 
         &__titre {
             color:$color-acceuil-menu1;    
             &:hover {                
                     &::after {
-                        @include underline-hover-after; 
+                        transform: scaleX(1);
                     }
             }
             &::after {
@@ -101,7 +96,7 @@
             color:$color-acceuil-menu1;    
             &:hover {                
                     &::after {
-                        @include underline-hover-after;
+                        transform: scaleX(1);
                     }
             }
             &::after {
