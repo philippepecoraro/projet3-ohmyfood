@@ -21,11 +21,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 60px;
     width: 900px;
-    margin-top: 80px;
+    
     position: fixed;
     bottom: 0;
 
@@ -38,4 +35,6 @@ footer {
         } 
     }  
 }
-
+h3 {
+    margin: 15px;
+}

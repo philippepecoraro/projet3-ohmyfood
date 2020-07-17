@@ -1,7 +1,7 @@
 header {
     font-family: 'Roboto', sans-serif;
     color: $color-letters-header ;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .contenu-menu-haut1__titre1, .container-menu1-haut__titre, .container-menu1-bas__titre {
     font-family: 'Devonshire', cursive;
@@ -47,7 +47,7 @@ header {
 .contenu-menu-bas2__titre1, .container-menu4-haut__titre {
     font-family: 'Kaushan Script', cursive;
 }
- .container-menu3-haut__titre {
+.container-menu3-haut__titre {
     font-size: 3.5rem;
 }
 .container-menu4-haut__titre {
@@ -73,7 +73,7 @@ footer {
     font-size: 1.3rem;
     font-weight: normal; 
 }  
- .pieddepage {
+.pieddepage {
 
     &__texte1 {
         color: $color-letters-header;
@@ -90,7 +90,6 @@ footer {
         text-decoration: none;
     }
 }   
-
 
 
 

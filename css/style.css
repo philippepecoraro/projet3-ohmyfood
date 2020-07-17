@@ -1,7 +1,7 @@
 header {
   font-family: "Roboto", sans-serif;
   color: #FDCB46;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .contenu-menu-haut1__titre1, .container-menu1-haut__titre, .container-menu1-bas__titre {
@@ -110,14 +110,14 @@ footer {
 }
 
 .container {
-  margin: auto;
+  margin: 0 auto;
   width: 900px;
   height: 1300px;
 }
 
 .container-acceuil, .container-menu1, .container-menu2, .container-menu3, .container-menu4 {
   width: 750px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @keyframes wiggle {
@@ -142,11 +142,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 60px;
   width: 900px;
-  margin-top: 80px;
   position: fixed;
   bottom: 0;
 }
@@ -155,6 +151,10 @@ footer .pieddepage__mentionslegales, footer .pieddepage__contacteznous {
 }
 footer .pieddepage__mentionslegales:hover, footer .pieddepage__contacteznous:hover {
   animation: wiggle 200ms infinite;
+}
+
+h3 {
+  margin: 15px;
 }
 
 header {
@@ -167,10 +167,30 @@ header {
   color: #FDCB46;
 }
 
+h1 {
+  margin-top: 0;
+  padding: 25px;
+}
+
+@keyframes points {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-8px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
 .contenu-menu-haut, .contenu-menu-bas {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .contenu-menu-haut1, .contenu-menu-haut2, .contenu-menu-bas1, .contenu-menu-bas2 {
@@ -181,6 +201,46 @@ header {
   width: 45%;
   text-align: center;
   border: 1px black solid;
+}
+
+.contenu-menu-haut1__lien {
+  transform: scale(1);
+  transition: transform 800ms;
+  opacity: 1;
+}
+.contenu-menu-haut1__lien:hover {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+.contenu-menu-haut2__lien {
+  transform: scale(1);
+  transition: transform 800ms;
+  opacity: 1;
+}
+.contenu-menu-haut2__lien:hover {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+.contenu-menu-bas1__lien {
+  transform: scale(1);
+  transition: transform 800ms;
+  opacity: 1;
+}
+.contenu-menu-bas1__lien:hover {
+  transform: scale(1.15);
+  opacity: 0.5;
+}
+
+.contenu-menu-bas2__lien {
+  transform: scale(1);
+  transition: transform 800ms;
+  opacity: 1;
+}
+.contenu-menu-bas2__lien:hover {
+  transform: scale(1.15);
+  opacity: 0.5;
 }
 
 .contenu-menu-haut1 {
@@ -202,7 +262,7 @@ header {
 .contenu-menu-haut2__titre1 {
   background: -webkit-linear-gradient(135deg, #C77412, #8F5AFF);
   background: linear-gradient(135deg, #C77412, #8F5AFF);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 .contenu-menu-haut2__titre2 {
@@ -218,7 +278,7 @@ header {
 .contenu-menu-bas1__titre1 {
   background: -webkit-linear-gradient(135deg, #0022DB, #0889FB);
   background: linear-gradient(135deg, #0022DB, #0889FB);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 .contenu-menu-bas1__titre2 {
@@ -234,7 +294,7 @@ header {
 .contenu-menu-bas2__titre1 {
   background: -webkit-linear-gradient(135deg, #43973D, #BEFF7F);
   background: linear-gradient(135deg, #43973D, #BEFF7F);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 .contenu-menu-bas2__titre2 {
@@ -251,8 +311,24 @@ header {
   border-radius: 8px;
 }
 
+.point1 {
+  display: inline-block;
+  animation: points 1000ms infinite;
+}
+
+.point2 {
+  display: inline-block;
+  animation: points 1000ms 300ms infinite;
+}
+
+.point3 {
+  display: inline-block;
+  animation: points 1000ms 600ms infinite;
+}
+
 .note-titre {
   text-align: center;
+  padding-top: 20px;
 }
 
 .container-menu1 {
@@ -417,6 +493,7 @@ header {
 
 .chic-titre {
   text-align: center;
+  padding-top: 20px;
 }
 
 .container-menu2 {
@@ -434,7 +511,7 @@ header {
 .container-menu2-haut__titre {
   background: -webkit-linear-gradient(135deg, #C77412, #8F5AFF);
   background: linear-gradient(135deg, #C77412, #8F5AFF);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 
@@ -565,6 +642,7 @@ header {
 
 .delice {
   text-align: center;
+  padding-top: 20px;
 }
 
 .container-menu3 {
@@ -582,7 +660,7 @@ header {
 .container-menu3-haut__titre {
   background: -webkit-linear-gradient(135deg, #0022DB, #0889FB);
   background: linear-gradient(135deg, #0022DB, #0889FB);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 
@@ -706,6 +784,7 @@ header {
 
 .gout {
   text-align: center;
+  padding-top: 20px;
 }
 
 .container-menu4 {
@@ -723,7 +802,7 @@ header {
 .container-menu4-haut__titre {
   background: -webkit-linear-gradient(135deg, #43973D, #BEFF7F);
   background: linear-gradient(135deg, #43973D, #BEFF7F);
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-background-clip: text;
 }
 

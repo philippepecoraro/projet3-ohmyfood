@@ -1,5 +1,5 @@
 .note-titre {
-    text-align: center;
+    @include titre;
 }
 .container-menu1 {
     background-color: $menu1-background;

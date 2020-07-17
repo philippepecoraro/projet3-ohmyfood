@@ -1,5 +1,5 @@
 .gout {
-    text-align: center;
+    @include titre;
 }
 .container-menu4 {
     background-color: $menu3-background;
@@ -11,7 +11,7 @@
     &__titre {
         background: -webkit-linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
         background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
-        -webkit-text-fill-color: transparent;
+        color: transparent;
         -webkit-background-clip: text;  
     }             
  }

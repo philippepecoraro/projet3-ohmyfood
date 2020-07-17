@@ -1,7 +1,22 @@
+@keyframes points {
+    0% {
+        transform: translateY(0) ;
+        opacity: 1;
+    }    
+    50% {
+        transform: translateY(-8px) ;
+        opacity: .8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+}
 .contenu-menu-haut, .contenu-menu-bas {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 .contenu-menu-haut1, .contenu-menu-haut2, .contenu-menu-bas1, .contenu-menu-bas2 {
     display: flex;
@@ -11,6 +26,18 @@
     width: 45%;    
     text-align: center;
     border: 1px black solid
+}
+.contenu-menu-haut1__lien {
+    @include effet-zoom;    
+}
+.contenu-menu-haut2__lien {
+    @include effet-zoom;
+}
+.contenu-menu-bas1__lien {
+    @include effet-zoom;
+}
+.contenu-menu-bas2__lien {
+    @include effet-zoom;
 }
 .contenu-menu-haut1 {
     background-color: $menu1-background;
@@ -29,7 +56,7 @@
         &__titre1 {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
             background: linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             -webkit-background-clip: text;
         }
         &__titre2 {
@@ -44,7 +71,7 @@
         &__titre1 {
            background: -webkit-linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b);
            background: linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b);
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             -webkit-background-clip: text;
         }
         &__titre2 {
@@ -59,8 +86,8 @@
         &__titre1 {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
             background: linear-gradient(135deg, $color-acceuil-menu4, $color-acceuil-menu4b);
-             -webkit-text-fill-color: transparent;
-             -webkit-background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
         }
          &__titre2 {
              color: $color-acceuil-menu4-menu;
@@ -75,5 +102,19 @@
     margin-bottom: 30px;
     border-radius: 8px;
 }
+.point1 {
 
+    display: inline-block;
+    animation: points 1000ms infinite;
+    
+}
+.point2 {
+    display: inline-block;
+    animation: points 1000ms 300ms infinite;
+
+}
+.point3 {
+    display: inline-block;
+    animation: points 1000ms 600ms infinite;
+}
 

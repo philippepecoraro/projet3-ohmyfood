@@ -1,5 +1,5 @@
 .delice {
-    text-align: center;
+    @include titre;
 }
 .container-menu3 {
     background-color: $menu3-background;
@@ -12,7 +12,7 @@
         &__titre {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b );
             background: linear-gradient(135deg, $color-acceuil-menu3, $color-acceuil-menu3b);
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             -webkit-background-clip: text;        
         }
 }

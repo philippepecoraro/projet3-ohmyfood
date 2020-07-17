@@ -1,5 +1,5 @@
 .chic-titre {
-    text-align: center;
+    @include titre;
 }
 .container-menu2 {
     background-color: $menu2-background;
@@ -12,7 +12,7 @@
         &__titre {
             background: -webkit-linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
             background: linear-gradient(135deg, $color-acceuil-menu2, $color-acceuil-menu2b);
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             -webkit-background-clip: text;
         }
 }
