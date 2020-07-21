@@ -4,12 +4,14 @@
 .container-menu1 {
     background-color: $menu1-background;
     display: flex;
-    flex-direction: column;  
-    
+    flex-direction: column;      
 }
 .container-menu1-haut {
     @include container-menu;
     line-height: 0.5rem;
+    @include mobiles {
+        line-height: normal;
+    }
         &__titre {
             color: $color-acceuil-menu1;
         } 
@@ -23,14 +25,40 @@
         &__imageG {
             @include menu-images;
             padding-left: 30px;
+            @include mobiles {
+                @include menu-images-mini;
+                padding-left: 0;
+               }
             }
         &__imageD {
             @include menu-images;
             padding-right: 30px;
+            @include mobiles {
+                @include menu-images-mini;
+                padding-right: 0;
+               }
             }
         &__corps {
             @include menu1-texte($color-acceuil-menu1);
-           }
+            @include petits-ecrans {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
+        }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__prix {        
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }            
         &__titre {
             color:$color-acceuil-menu1;    
             &:hover {                
@@ -41,7 +69,10 @@
             &::after {
                 @include underline-after;
                 width: 70px;
-                background: $color-acceuil-menu1;            
+                background: $color-acceuil-menu1; 
+                @include petits-ecrans {
+                    width: 0;
+                }           
             }  
         }
 }
@@ -52,15 +83,42 @@
         }
         &__imageG {
             @include menu-images;
-            padding-left: 30px;
+            padding-left: 40px;
+            @include mobiles {
+                @include menu-images-mini;
+                padding-left: 0;
+            }
         }
         &__imageD {
             @include menu-images;
-            padding-right: 30px;
-                }
+            padding-right: 40px;
+            @include mobiles{
+                @include menu-images-mini;
+                padding-right: 0;
+            }
+        }
         &__corps {
             @include menu1-texte($color-acceuil-menu1);
+            @include petits-ecrans {
+                padding-left: 40px;
+                padding-right: 40px;        
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }     
+        }
+       
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         } 
+        &__prix {        
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;                      
+        }     
         &__titre {
             color:$color-acceuil-menu1;    
             &:hover {                
@@ -71,7 +129,10 @@
             &::after {
             @include underline-after;
                 width: 130px;   
-                background: $color-acceuil-menu1;          
+                background: $color-acceuil-menu1;   
+                @include petits-ecrans {
+                    width: 0;
+                }       
             }  
         }
 }
@@ -82,15 +143,32 @@
         }
         &__imageG {
             @include menu-images;
-            padding-left: 30px;
+            padding-left: 50px;
+            @include mobiles {
+                @include menu-images-mini;
+                padding-left: 0;
+            }
         }
         &__imageD {
             @include menu-images;
-            padding-right: 30px;
+            padding-right: 50px;
+            @include mobiles {
+                @include menu-images-mini;
+                padding-right: 0;
+            }
                 }
         &__texte {
-            padding-left: 60px;
+            padding-left: 70px;
+            padding-right: 70px;
             color:$color-acceuil-menu1;
+            @include petits-ecrans {
+                padding-left: 40px;
+                padding-right: 40px;        
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }     
         }  
         &__titre {
             color:$color-acceuil-menu1;    
@@ -102,7 +180,10 @@
             &::after {
                 @include  underline-after;
                 width: 160px; 
-                background: $color-acceuil-menu1;            
+                background: $color-acceuil-menu1; 
+                @include petits-ecrans {
+                    width: 0;
+                }           
             }  
         }
 }

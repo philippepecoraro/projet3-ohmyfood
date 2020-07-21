@@ -19,17 +19,41 @@
 .container-menu3-commencer {
     margin-top: 50px;
         &__entete {
-        @include menu-entete;     
+           @include menu-entete;     
         }
         &__imageG {
-        @include menu-images;        
+           @include menu-images; 
+           @include mobiles {
+               @include menu-images-mini;            
+           }       
         }
         &__imageD {
-        @include menu-images;        
+           @include menu-images;
+           @include mobiles {
+               @include menu-images-mini;
+            }               
         }
         &__corps {
-        @include menu2-3-texte(black);        
+           @include menu2-3-texte(black);  
+           @include petits-ecrans {
+               padding-left: 40px;
+               padding-right: 40px;        
+            }  
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }           
         }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__prix {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }       
         &__titre {        
             &:hover {                
                 &::after {
@@ -40,23 +64,51 @@
                 @include underline-after;
                 width: 175px;     
                 background: $color-acceuil-menu3; 
+                @include petits-ecrans {
+                    width: 0;
+                }    
             }  
         }    
 }
 .container-menu3-continuer {
     margin-top: 30px;
         &__entete {
-        @include menu-entete; 
+           @include menu-entete; 
         }
         &__imageG {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+               @include menu-images-mini;
+            }
         }
         &__imageD {
-        @include menu-images;
+            @include menu-images;
+            @include mobiles {
+                @include menu-images-mini;
+            }
         }
         &__corps {
-        @include menu2-3-texte (black);
+            @include menu2-3-texte (black);
+            @include petits-ecrans {
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
         }
+
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } 
+        &__prix {           
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }       
         &__titre {            
             &:hover {                
                 &::after {
@@ -66,7 +118,10 @@
             &::after {
             @include underline-after;
                 width: 160px;   
-                background: $color-acceuil-menu3c;          
+                background: $color-acceuil-menu3c; 
+                @include petits-ecrans {
+                    width: 0;
+                }              
             }  
         }
 }
@@ -74,17 +129,41 @@
     margin-top: 30px;
     margin-bottom: 100px;
         &__entete {
-        @include menu-entete;
+           @include menu-entete;
         }
         &__imageG {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+               @include menu-images-mini;
+           }
         }
         &__imageD {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+               @include menu-images-mini;
+            }
         }
         &__corps {
-        @include menu2-3-texte (black);
+           @include menu2-3-texte (black);
+           @include petits-ecrans {
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
         }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } 
+            &__prix {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }     
         &__titre {        
             &:hover {                
                     &::after {
@@ -94,7 +173,10 @@
             &::after {
                 @include  underline-after;
                 width: 150px; 
-                background:$color-acceuil-menu3d ;            
+                background:$color-acceuil-menu3d; 
+                @include petits-ecrans {
+                    width: 0;
+                }      
             }  
         }
 }

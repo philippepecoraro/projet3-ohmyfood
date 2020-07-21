@@ -21,11 +21,18 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 900px;
-    
+    max-width: 900px;
+    width: 100%;
     position: fixed;
     bottom: 0;
-
+    @include petits-ecrans {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;    
+        position: relative;        
+    }  
     .pieddepage{    
         &__mentionslegales, &__contacteznous {
         text-decoration: none;  
@@ -37,4 +44,7 @@ footer {
 }
 h3 {
     margin: 15px;
+    @include petits-ecrans {
+        margin: 15px 0;
+    }
 }

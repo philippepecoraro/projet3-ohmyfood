@@ -20,17 +20,41 @@
     margin-top: 50px;
     margin-bottom: 40px;
         &__entete {
-        @include menu-entete;
+           @include menu-entete;
         }
         &__imageG {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+              @include menu-images-mini;
+            }
         }
         &__imageD {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+              @include menu-images-mini;
+            }
         }
         &__corps {
-        @include menu2-3-texte ($color-acceuil-menu2);
+            @include menu2-3-texte ($color-acceuil-menu2);
+            @include petits-ecrans {
+               padding-left: 40px;
+               padding-right: 40px;        
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
         }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__prix {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }           
         &__titre {
             color: $color-acceuil-menu2;
             &:hover {                
@@ -41,7 +65,10 @@
             &::after {
                 @include underline-after;
                 width: 230px;     
-                background: $color-acceuil-menu2;     
+                background: $color-acceuil-menu2;
+                @include petits-ecrans {
+                    width: 0;
+                }       
             }  
         }    
 }
@@ -49,17 +76,41 @@
     margin-top: 30px;
     margin-bottom: 50px;
         &__entete {
-        @include menu-entete;
+            @include menu-entete;
         }
         &__imageG {
-        @include menu-images;
+            @include menu-images;
+            @include mobiles {
+                @include menu-images-mini;
+        }
         }
         &__imageD {
-        @include menu-images;
+           @include menu-images;
+           @include mobiles {
+               @include menu-images-mini;
+        }
         }
         &__corps {
-        @include menu2-3-texte ($color-menu2-papilles);
+           @include menu2-3-texte ($color-menu2-papilles);
+           @include petits-ecrans {
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
         }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        } 
+        &__prix {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }     
         &__titre {
             color: $color-menu2-papilles; 
             &:hover {                
@@ -70,7 +121,10 @@
             &::after {
             @include underline-after;
                 width: 170px;   
-                background: $color-menu2-papilles;          
+                background: $color-menu2-papilles; 
+                @include petits-ecrans {
+                    width: 0;
+                }             
             }  
         }
 }
@@ -81,13 +135,27 @@
         }
         &__imageG {
             @include menu-images;
+            @include mobiles {
+                @include menu-images-mini;
+            } 
         }
         &__imageD {
             @include menu-images;
+            @include mobiles {
+                @include menu-images-mini;
+            }
                 }
         &__texte {
             padding-left: 90px;
             color: $color-menu-gourmandises;
+            @include petits-ecrans {
+                padding-left: 40px;
+                padding-right: 40px;
+                }
+                @include mobiles {
+                    padding-left: 20px;
+                    padding-right: 20px;        
+                }        
         }  
         &__titre {
             color: $color-menu-gourmandises;
@@ -99,7 +167,10 @@
             &::after {
                 @include  underline-after;
                 width: 200px; 
-                background: $color-menu-gourmandises;            
+                background: $color-menu-gourmandises;
+                @include petits-ecrans {
+                    width: 0;
+                }               
             }  
         }
 }

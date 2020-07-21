@@ -1,6 +1,6 @@
 @mixin menu1-texte ($color) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-left: 70px;
     padding-right: 70px;
     color: $color
@@ -8,7 +8,7 @@
 
 @mixin menu2-3-texte ($color) {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-left: 90px;
     padding-right: 90px;
     color: $color;
@@ -16,21 +16,26 @@
 
 @mixin menu4-texte {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-left: 80px;
     padding-right: 80px;
+    color: black;
 }
 
 @mixin menu-images {
     height: 10px;
     width: 200px;    
 }
-
+@mixin menu-images-mini {
+    height: 5px;
+    width: 100px;
+}     
 @mixin menu-entete {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 30px;
+    text-align: center;
 }
 
 @mixin underline-after {
@@ -60,4 +65,17 @@
     transform: scale(1.15);
     opacity: 0.5;
     }
+}
+@mixin petits-ecrans {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: tablette))
+    {
+        @content;
+    }     
+}
+@mixin mobiles {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: mobile))
+    {
+        @content;
+    }
+    
 }

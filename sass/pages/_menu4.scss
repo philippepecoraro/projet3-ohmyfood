@@ -21,13 +21,37 @@
             @include menu-entete;     
             }
             &__imageG {
-            @include menu-images;        
+               @include menu-images; 
+               @include petits-ecrans {
+                   @include menu-images-mini;
+                }             
             }
             &__imageD {
-            @include menu-images;        
+               @include menu-images; 
+               @include petits-ecrans {
+                   @include menu-images-mini;
+                }           
             }
             &__corps {
-            @include menu4-texte;
+               @include menu4-texte;
+               @include petits-ecrans {
+                   padding-left: 40px;
+                   padding-right: 40px;        
+                }
+                @include mobiles {
+                    padding-left: 20px;
+                    padding-right: 20px;        
+                }         
+            }
+            &__texte {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &__prix {
+                display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             }
             &__titre {        
                 &:hover {                
@@ -38,23 +62,50 @@
                 &::after {
                     @include underline-after;
                     width: 70px;     
-                    background: $color-acceuil-menu4; 
+                    background: $color-acceuil-menu4;
+                    @include petits-ecrans {
+                        width: 0;
+                    }    
                 }  
             }    
 }
 .container-menu4-oeuvre {
     margin-top: 30px;
         &__entete {
-        @include menu-entete; 
+           @include menu-entete; 
         }
         &__imageG {
-        @include menu-images;
+           @include menu-images;
+           @include petits-ecrans {
+               @include menu-images-mini;
+            }
         }
         &__imageD {
-        @include menu-images;
+           @include menu-images;
+           @include petits-ecrans {
+               @include menu-images-mini;
+            }
         }
         &__corps {
-        @include menu4-texte;
+            @include menu4-texte;
+            @include petits-ecrans {
+               padding-left: 40px;
+               padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
+        }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__prix {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
         }
         &__titre {            
             &:hover {                
@@ -65,7 +116,10 @@
             &::after {
             @include underline-after;
                 width: 140px;   
-                background: $color-acceuil-menu4;          
+                background: $color-acceuil-menu4; 
+                @include petits-ecrans {
+                    width: 0;
+                }                
             }  
         }
 }
@@ -73,17 +127,41 @@
     margin-top: 30px;
     margin-bottom: 100px;
         &__entete {
-        @include menu-entete;
+           @include menu-entete;
         }
         &__imageG {
-        @include menu-images;
+           @include menu-images;
+           @include petits-ecrans {
+               @include menu-images-mini;
+            }
         }
         &__imageD {
-        @include menu-images;
+           @include menu-images;
+           @include petits-ecrans {
+               @include menu-images-mini;
+            }
         }
         &__corps {
-        @include menu4-texte;
+           @include menu4-texte;
+           @include petits-ecrans {
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+            }        
         }
+        &__texte {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__prix {
+            display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        }        
         &__titre {        
             &:hover {                
                     &::after {
@@ -93,7 +171,10 @@
             &::after {
                 @include  underline-after;
                 width: 155px; 
-                background:$color-acceuil-menu4 ;            
+                background:$color-acceuil-menu4; 
+                @include petits-ecrans {
+                    width: 0;
+                }                
             }  
         }
 }

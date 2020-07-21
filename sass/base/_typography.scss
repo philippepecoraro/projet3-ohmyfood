@@ -2,6 +2,9 @@ header {
     font-family: 'Roboto', sans-serif;
     color: $color-letters-header ;
     font-size: 1.6rem;
+    @include mobiles {
+        font-size: 1.3rem;
+    }
 }
 .contenu-menu-haut1__titre1, .container-menu1-haut__titre, .container-menu1-bas__titre {
     font-family: 'Devonshire', cursive;
@@ -12,6 +15,15 @@ header {
 .container-menu1-haut__titre {
     font-size: 3rem;
     font-weight: normal;
+    @include mobiles {
+        font-size: 2rem;
+    }
+}
+.note-titre, .chic-titre, .delice, .gout  {
+    font-size: 2rem;
+    @include mobiles {
+        font-size: 1.4rem;
+    }
 }
 .container-menu1-bas__titre {
     font-size: 1.8rem;
@@ -19,6 +31,9 @@ header {
 }
 .container-menu1-prelude__titre, .container-menu1-pointorgue__titre, .container-menu1-mouvement__titre {
     font-size: 1.4rem;
+    @include mobiles {
+        font-size: 1.2rem;
+    }
 }
 .container-menu1, .container-menu3, .container-menu4, .contenu-menu-bas1__titre2, .contenu-menu-bas2__titre2 {
     font-family: 'Kalam', cursive;
@@ -31,9 +46,16 @@ header {
 }
 .container-menu2-haut__titre {
     font-weight: normal;
+    font-size: 2.1rem;
+    @include mobiles {
+        font-size: 1.4rem;
+    }
 }
 .container-menu2-appetit__titre, .container-menu2-papilles__titre, .container-menu2-gourmandises__titre {
     font-size: 1.2rem;
+    @include petits-ecrans {
+        font-size: 1rem;
+    }
 }
 .contenu-menu-haut2__titre1, .container-menu2-haut__titre {
     font-family: 'Croissant One', cursive;
@@ -49,10 +71,16 @@ header {
 }
 .container-menu3-haut__titre {
     font-size: 3.5rem;
+    @include mobiles {
+        font-size: 2rem;
+    }
 }
 .container-menu4-haut__titre {
     font-size: 3.5rem;
     font-weight: normal;
+    @include mobiles {
+        font-size: 2rem;
+    }
 }
 .container-menu3-commencer__titre, .container-menu3-continuer__titre, .container-menu3-terminer__titre {
     font-weight: normal;
@@ -67,11 +95,17 @@ header {
     color: $color-letters-header;
     font-size: 2.1rem;
     font-weight: normal;
+    @include mobiles {
+        font-size: 1.5rem;
+    }
 }
 footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    font-weight: normal; 
+    font-weight: normal;
+    @include mobiles {
+        font-size: 1.1rem;
+    }
 }  
 .pieddepage {
 
