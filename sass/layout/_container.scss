@@ -19,18 +19,17 @@
     width: 750px;
     margin: 0 auto;
     @include petits-ecrans {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin: auto;
+        @include container (100%);
     }
     @include mobiles {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin: auto;
+        @include container (100%);
     }      
 }
-
+.container-acceuil {
+    @include petits-ecrans {
+        @include container (80%);
+    }
+    @include mobiles {
+        @include container (100%);
+    }
+}

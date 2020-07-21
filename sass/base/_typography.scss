@@ -31,6 +31,9 @@ header {
 }
 .container-menu1-prelude__titre, .container-menu1-pointorgue__titre, .container-menu1-mouvement__titre {
     font-size: 1.4rem;
+    @include petits-ecrans {
+        font-size: 1.3rem;
+    }
     @include mobiles {
         font-size: 1.2rem;
     }

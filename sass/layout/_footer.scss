@@ -46,5 +46,6 @@ h3 {
     margin: 15px;
     @include petits-ecrans {
         margin: 15px 0;
+        text-align: center;
     }
 }
