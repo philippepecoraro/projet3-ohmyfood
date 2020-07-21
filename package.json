@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
   },
   "repository": {
     "type": "git",
-    "url": "philippe"
+    "url": ""
   },
   "author": "Philippe Pecoraro",
-  "license": "ISC"
+  "license": "ISC",
+  "browerslist": "last 4 versions"
 }
