@@ -1,10 +1,10 @@
 @keyframes wiggle {
     0% {
         transform: translate(1px, 1px) rotate(2deg);
-    }  
+    }
     25% {
         transform: translate(-1px, -1px) rotate(-2deg);
-    } 
+    }
     50% {
         transform: translate(1px, 1px) rotate(2deg);
     }
@@ -37,10 +37,10 @@ footer {
         &__mentionslegales, &__contacteznous {
         text-decoration: none;  
             &:hover {
-                animation: wiggle 200ms infinite;
+               animation: wiggle 200ms infinite;
             }      
         } 
-    }  
+    }
 }
 h3 {
     margin: 15px;

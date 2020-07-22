@@ -160,21 +160,18 @@
                 @include menu-images-mini;
                 padding-right: 0;
             }
-                }
-        &__texte {
-            padding-left: 70px;
-            padding-right: 70px;
-            color:$color-acceuil-menu1;
-            line-height: 2.5rem;
+        }
+        &__corps {
+            @include menu1-texte($color-acceuil-menu1);
             @include petits-ecrans {
                 padding-left: 40px;
                 padding-right: 40px;        
-            }
+              }
             @include mobiles {
                 padding-left: 20px;
                 padding-right: 20px;        
             }     
-        }  
+        }       
         &__titre {
             color:$color-acceuil-menu1;    
             &:hover {                

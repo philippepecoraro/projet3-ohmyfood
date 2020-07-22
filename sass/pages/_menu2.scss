@@ -148,19 +148,17 @@
                 @include menu-images-mini;
             }
                 }
-        &__texte {
-            padding-left: 90px;
-            color: $color-menu-gourmandises;
-            line-height: 2.3rem;
+        &__corps {
+            @include menu2-3-texte($color-menu-gourmandises);
             @include petits-ecrans {
                 padding-left: 40px;
-                padding-right: 40px;
+                padding-right: 40px;        
                 }
-                @include mobiles {
-                    padding-left: 20px;
-                    padding-right: 20px;        
-                }        
-        }  
+            @include mobiles {
+                padding-left: 20px;
+                padding-right: 20px;        
+                }     
+        }        
         &__titre {
             color: $color-menu-gourmandises;
             &:hover {                
