@@ -1,7 +1,7 @@
 .container {
-    margin: 0 auto;
+    margin: auto;
     width: 900px;
-    height: 1300px;
+    height: 1450px;
     @include petits-ecrans {
         width: auto;
         display: flex;
@@ -15,9 +15,9 @@
         height: auto;
     }      
 }
-.container-acceuil, .container-menu1, .container-menu2, .container-menu3, .container-menu4 {
+.container-menu1, .container-menu2, .container-menu3, .container-menu4 {
     width: 750px;
-    margin: 0 auto;
+    margin: auto;
     @include petits-ecrans {
         @include container (100%);
     }
@@ -26,6 +26,8 @@
     }      
 }
 .container-acceuil {
+    width: 750px;
+    margin: auto;
     @include petits-ecrans {
         @include container (80%);
     }

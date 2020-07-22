@@ -1,10 +1,14 @@
 .gout {
     @include titre;
+    @include mobiles {
+        padding: 0;
+    }
 }
 .container-menu4 {
     background-color: $menu3-background;
     display: flex;
-    flex-direction: column;      
+    flex-direction: column; 
+    box-shadow: 1px 1px 8px grey;
 }
 .container-menu4-haut {
     @include container-menu;
@@ -22,13 +26,13 @@
             }
             &__imageG {
                @include menu-images; 
-               @include petits-ecrans {
+               @include mobiles {
                    @include menu-images-mini;
                 }             
             }
             &__imageD {
                @include menu-images; 
-               @include petits-ecrans {
+               @include mobiles {
                    @include menu-images-mini;
                 }           
             }
@@ -76,13 +80,13 @@
         }
         &__imageG {
            @include menu-images;
-           @include petits-ecrans {
+           @include mobiles {
                @include menu-images-mini;
             }
         }
         &__imageD {
            @include menu-images;
-           @include petits-ecrans {
+           @include mobiles {
                @include menu-images-mini;
             }
         }
@@ -131,13 +135,13 @@
         }
         &__imageG {
            @include menu-images;
-           @include petits-ecrans {
+           @include mobiles {
                @include menu-images-mini;
             }
         }
         &__imageD {
            @include menu-images;
-           @include petits-ecrans {
+           @include mobiles {
                @include menu-images-mini;
             }
         }

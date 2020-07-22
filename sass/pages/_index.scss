@@ -31,7 +31,7 @@
     height: 450px;
     width: 45%;    
     text-align: center;
-    border: 1px black solid;
+    box-shadow: 1px 1px 8px grey;
     @include petits-ecrans {
         width: 100%;
         display: flex;
@@ -111,16 +111,18 @@
     height: 50px;
     text-align: center;
     margin: auto;
-    margin-bottom: 30px;
+    margin-top: 70px;
     border-radius: 8px;
     @include petits-ecrans {
         width: auto;  
-        padding: 0 10px;    
+        padding: 0 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     @include mobiles {
         height: auto;
         padding: 10px;
-        margin-bottom: 20px;
+        
     }
 }
 .point1 {

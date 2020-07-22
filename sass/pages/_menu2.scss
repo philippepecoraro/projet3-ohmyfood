@@ -1,11 +1,14 @@
 .chic-titre {
     @include titre;
+    @include mobiles {
+        padding: 0;
+    }
 }
 .container-menu2 {
     background-color: $menu2-background;
     display: flex;
     flex-direction: column;  
-    
+    box-shadow: 1px 1px 8px grey; 
 }
 .container-menu2-haut {
     @include container-menu;
@@ -148,6 +151,7 @@
         &__texte {
             padding-left: 90px;
             color: $color-menu-gourmandises;
+            line-height: 2.3rem;
             @include petits-ecrans {
                 padding-left: 40px;
                 padding-right: 40px;
