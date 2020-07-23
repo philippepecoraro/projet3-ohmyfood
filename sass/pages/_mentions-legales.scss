@@ -1,0 +1,12 @@
+.container-mentions-legales
+ {
+    width: 750px;
+    box-shadow: 1px 1px 8px grey;
+    margin: auto;
+    background-color:$color-mentios-legales ;
+    text-align: center;
+    padding-bottom: 20px;
+    @include petits-ecrans {
+        @include container (100%);
+    }    
+}
